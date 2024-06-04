@@ -10,6 +10,7 @@ def sanitize_text(text):
 path = ".\pdfs"
 filenames = os.listdir(path) 
 
+#filename format is as follows, with M or F for gender sig: resumename-F.pdf
 for k in filenames:
     filename = '.\pdfs' + '\\' + k
     print("filename: " + filename + " gender: " + filename[(len(filename)-5)])
